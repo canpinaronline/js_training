@@ -16,7 +16,7 @@ function onClick(e) {
     }
     tasks.push(taskInput);
     localStorage.setItem('tasks',JSON.stringify(tasks));
-    alert('Your tasks are saved.')
+    alert('Tasks saved.')
     
 
     
