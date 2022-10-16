@@ -9,4 +9,4 @@ function fact(number) {
     return total;
 }
 
-console.log(fact(5))
+console.log(fact(number))
