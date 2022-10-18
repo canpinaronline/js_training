@@ -22,7 +22,7 @@
     align-items: center;
     flex-direction: column;
     color: white;
-    background-color:cornflowerblue;
+    background-color:rgb(21, 43, 83);
     border-radius: 25px;
     
 }
@@ -41,3 +41,10 @@
     color: crimson;
     font-weight: bold;
 }
+
+.resulttext-true {
+    color: rgb(0, 151, 8);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+

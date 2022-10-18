@@ -11,11 +11,27 @@ function loadEventListeners() {
 
 function calculateRate(e) {
     
-        let totalInterest = parseFloat(rate.value * paymentYear.value) * 0.01
-        let interest = parseFloat(loan.value * totalInterest)
-        let totalPrice = parseFloat((loan.value) * (totalInterest)) + parseFloat(loan.value)
 
-        addToUi(totalPrice,interest)
+
+        const principal = parseFloat(loan.value);
+        const calculatedInterest = parseFloat(rate.value) / 100 / 12;
+        const calculatedPayments = parseFloat(paymentYear.value) * 12;
+        const x = Math.pow(1 + calculatedInterest, calculatedPayments);
+        const monthly = (principal*x*calculatedInterest)/(x-1);
+        const totalPrice = (monthly * calculatedPayments).toFixed(2);
+        const totalInterest = ((monthly * calculatedPayments)-principal).toFixed(2);
+        addToUi(totalPrice,totalInterest)
+        function addToUi(totalLoan,interestLoan){
+    
+            if (content.innerText.length > 0) {
+                content.innerText = ""
+            }
+            const para = document.createElement("p")
+            para.innerText = `You will pay ${totalPrice} dollars in ${paymentYear.value} years
+                                Monthly cost : ${monthly.toFixed(2)} dollars
+                                Your total interest value is: ${totalInterest} dollars`
+            content.appendChild(para)
+        }
         
         e.preventDefault();
     
@@ -23,14 +39,3 @@ function calculateRate(e) {
 }
 
 
-function addToUi(totalLoan,interestLoan){
-    
-    if (content.innerText.length > 0) {
-        content.innerText = ""
-    }
-    const para = document.createElement("p")
-    para.innerText = `You will pay ${totalLoan.toFixed(2)} dollars in ${paymentYear.value} years
-                        Monthly cost : ${(totalLoan/(paymentYear.value*12)).toFixed(2)} dollars
-                        Your Loan amount: ${interestLoan.toFixed(2)} dollars`
-    content.appendChild(para)
-}

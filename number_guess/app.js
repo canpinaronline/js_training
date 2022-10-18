@@ -22,6 +22,10 @@ function predictionMethod(e){
     if (randomNumber == userGuess.value) {
         console.log("congrates");
         userGuess.disabled = true;
+        
+        para.innerText = `Your predict is ${userGuess.value} and the actual number is ${randomNumber}`
+        para.classList.add('resulttext-true')
+        result.appendChild(para)
         predict.innerText = "New Game"
         this.addEventListener('click',function() {newGame() })
 
