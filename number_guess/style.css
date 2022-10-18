@@ -1,0 +1,43 @@
+*  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.w {
+    width: 100%;
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    background-color: rgb(219, 203, 203);
+}
+
+.area {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color:cornflowerblue;
+    border-radius: 25px;
+    
+}
+
+.area input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.result {
+    padding: 10px;
+    margin: 10px
+}
+
+.resulttext {
+    color: crimson;
+    font-weight: bold;
+}
