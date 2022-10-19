@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    height: 600px;
+    background-color: brown;
+    border-radius: 10px;
+}
+
+.numbers {
+    display: flex;
+}
+
+h2 {
+    color: white;
+}
+
+.clock p {
+    color: white;
+    font-size: 100px;
+    padding: 10px;
+    
+}
+
+.buttons {
+    width: 600px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+input {
+    padding: 10px;
+    background-color: darkcyan;
+    color: whitesmoke;
+    font-weight: 900;
+}
+
+input:hover {
+    padding: 10px;
+    background-color: rgb(179, 216, 216);
+    color: crimson;
+    font-weight: 900;
+    cursor: pointer;
+}
+
