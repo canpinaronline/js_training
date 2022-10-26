@@ -3,6 +3,7 @@ let colors = ["FF8787","4FA095","FF97C1","150050","4C6793"]
 let randomColor = Math.floor(Math.random() * colors.length);
 
 
+
 function randomUrl(randomNumber) {
     let url = `https://api.themoviedb.org/3/movie/${randomNumber}?api_key=d4d80b3152e2f091cd45c0b2b791db37`
     getFile(url)
