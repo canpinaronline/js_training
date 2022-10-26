@@ -57,9 +57,3 @@ function timer(){
     } 
 }
 
-function changeBackground() {
-    
-    
-
-    
-}
