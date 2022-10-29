@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Currency and CryptoCurrency Exchange - </title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto&display=swap');
+        * {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: #06283D;
+            color: #f2f2f2;
+        
+        }
+        form {
+            width: 500px;
+            
+        }
+
+        form select {
+            color: black;
+        }
+        
+        .container {
+            height: 100vh;
+        }
+
+        
+    </style>
+  </head>
+  <body>
+                
+    <marquee scrollamount="10" style="border-radius:25px;color:white; background:#256D85; text-transform: uppercase;" loop="infinite" id="livetext" direction=right></marquee>
+    <div class="container d-flex justify-content-center d-flex align-items-center">
+        
+        
+        <!-- Form start -->
+        <h1 class="p-2">Convert most traded currencies in the world.</h1>
+        
+        <form class="mx-auto">
+            <h3 class="text-light" style="text-align: center;">Convert your currency.</h3>
+            <select id="currency1" class="form-select" aria-label="Default select example">
+                
+                <!-- API DATA WILL BE HERE. -->
+                 <!-- API DATA WILL BE HERE. -->
+                  <!-- API DATA WILL BE HERE. -->
+            
+              <input id="amount" type="text" value="0" class="mt-2 form-control" placeholder="Amount">
+              <br>
+              <p style="text-align: center; font-weight: bold;">to</p>
+              <select id="currency2" class="form-select" aria-label="Default select example">
+                <!-- API DATA WILL BE HERE. -->
+                 <!-- API DATA WILL BE HERE. -->
+                  <!-- API DATA WILL BE HERE. -->
+                
+                
+              </select>
+              <div class="d-flex flex-column">
+                <a  id="convert" href="" class="mt-2 btn btn-outline-info">CONVERT</a>
+                <div id="result" class="mt-2 d-none"></div>
+              </div>
+              
+
+        </form> <!-- Form ends -->
+        
+    </div> <!-- Container ends -->
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
